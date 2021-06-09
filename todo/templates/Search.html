@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+    <body>
+        {% block content %}
+        <div class = "todo_text">
+            <h1>Search</h1>
+        </div>
+        <hr>
+        <button><a href="/">뒤로가기</a></button>
+        <br><br>
+        <form action="." method="POST">{% csrf_token %}
+            {{form.as_table}}
+            <input type='submit' value='검색'>
+        </form>
+        <br>
+        {% if List %}
+            <table class = "todo_table">
+                {% for todo in List %}
+                    <tr> 
+                        <th>{{todo.title}}</th>
+                        <td>{{todo.deadline}}</td>
+                        <td id="btn_table"><button><a href="/update/{{todo.id}}/">수정</a></button></td>
+                        <td id="btn_table"><button><a href="/delete/{{todo.id}}/">완료</a></button></td>
+                    </tr>
+                {% endfor %}      
+            </table> 
+        {% elif Search %}
+            <b>검색 결과 없음</b>
+        {% endif %}
+        
+        {% endblock %}
+    </body>

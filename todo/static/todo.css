@@ -1,0 +1,76 @@
+body {
+    padding-left: 15px;
+}
+
+.todo_title {
+    background-color:royalblue;
+    margin-top: 0;
+    padding: 3px 10px 3px 20px;
+    font-size: 20pt;
+    font-family: 'Georgia';
+    color: white;
+}
+.todo_text{
+    font-size: 10pt;
+    color: royalblue;
+}
+
+.todo_table{
+    border-collapse: collapse;
+    border-spacing: 2px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid royalblue;
+    border-left: 4px solid royalblue;
+    margin : 20px 10px;
+}
+
+.todo_table th {
+    width: 300px;
+    padding: 10px;
+    font-weight: bold;
+    color:royalblue;
+    vertical-align: top;
+    border-bottom: 1px solid royalblue;
+}
+.todo_table td {
+    width: 160px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid royalblue;
+}
+#btn_table{
+    width: 60px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid royalblue;
+}
+
+button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 0.4rem 0.8rem;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    background-color:royalblue;
+    color:white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer
+}
+button:hover{
+    background-color:lightpink;
+    color:white;
+}
+
+a:link{
+    color:white;
+    text-decoration: none;
+}
+a:visited{
+    color:white;
+    text-decoration: none;
+}

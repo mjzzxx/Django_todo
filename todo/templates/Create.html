@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+    <body>
+        {% block content %}
+        <div class = "todo_text">
+            <h1>To-do 작성</h1>
+        </div>
+        <hr>
+        <form method="POST" class='post_form'>
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit" class="btn">작성</button>
+            <button><a href="/">취소</a></button>
+        </form>
+        
+        {% endblock %}
+    </body>

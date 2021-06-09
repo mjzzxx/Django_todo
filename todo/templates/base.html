@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "{% static 'todo.css' %}">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class = "todo_title">
+        <h1>To-Do List</h1>
+    </div>
+    <br>
+    
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
